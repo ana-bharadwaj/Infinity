@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="LoginPage.css">
+    <link rel="stylesheet" href="Signup.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+     rel="stylesheet"/>
+
+    <script>
+      function validate()
+      {
+        if ( document.loginForm.emailid.value == '' )
+        {
+          alert('Please enter emailid');
+          document.loginForm.emailid.focus();
+          return false;
+        }
+        if ( document.loginForm.password.value == '' )
+        {
+          alert('Please enter password');
+          document.loginForm.password.focus();
+          return false;
+        }
+      else{
+        alert('Logged in Successfully!');
+        return true;
+      }
+    }
+    </script>
+</head>
+<body>
+  <form action="LoginPage.html" name="loginForm" method="post">
+       <div class="LoginPage">
+         <div class="background">
+          
+          <div id="glass">
+          <div id="login">
+            <b><h1>Login to your Account</h1></b>
+            <div id="herotext">
+            <br><h3>Welcome back!</h3>
+          </div>
+            <div id="text">
+              <input style="font-family: 'Font Awesome 5 Free'; font-weight: 100;" type="email" placeholder=" &#xf0e0; Email" id="txt1email" width="100px" height="50px" required><br>
+                <br><input type="password" placeholder="Password" id="password" width="100px" height="50px" required><br>
+                <br><button value="Login" onclick="return validate()"><a href="HomePage.html"></a><b>Login</b></button><br>
+                <br><p><b>Don't have an account?<a href="Signup.html" style="color:rgb(1, 1, 1)"><b>Create an account</a></b></p><br>
+                
+                    <p class="liw">Log in with</p>
+                    
+                    <div class="icons">
+                      <a href="https://www.google.com/search?q=gmail+login&rlz=1C1YTUH_enIN1013IN1013&oq=gmail&aqs=chrome.1.69i57j0i131i433i512l3j0i433i512j0i131i433i512l4j0i271.5198j0j15&sourceid=chrome&ie=UTF-8"><ion-icon name="logo-google"></ion-icon></a>
+                      <a href="https://www.google.com/search?q=login+facebook&rlz=1C1YTUH_enIN1013IN1013&sxsrf=APwXEdf_7w5jFqrRrLjZMsDzINAwHNlcbQ%3A1685592658101&ei=Uhp4ZJ_iBbqgseMPy5KBmAo&oq=fac&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABCKBRCwAxBDMgoIABCKBRCwAxBDMgwIABCKBRCwAxAKEEMyCggAEIoFELADEEMyFQguEIoFEMcBENEDEMgDELADEEMYATIPCC4QigUQyAMQsAMQQxgBMhUILhCKBRDHARDRAxDIAxCwAxBDGAEyDwguEIoFEMgDELADEEMYATIVCC4QigUQxwEQ0QMQyAMQsAMQQxgBMhUILhCKBRDHARDRAxDIAxCwAxBDGAEyFQguEIoFEMcBENEDEMgDELADEEMYAUoECEEYAFAAWABg0hpoAXABeACAAQCIAQCSAQCYAQDAAQHIARPaAQYIARABGAg&sclient=gws-wiz-serp"><ion-icon name="logo-facebook"></ion-icon></a> 
+                    </div>
+            </div>
+          </div>
+         
+        </div>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+      </div>
+    </form>
+</body>
+</html>
